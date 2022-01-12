@@ -18,9 +18,9 @@ def titenkov_predict(number=1):
     mn, mx = min_, max_  # задаем локальные переменные верхней и нижней границ
     count = 0
     while True:
-        count += 1
-        # выбираем число из середины возможного диапазона
+        count += 1        
         predict_number = int((mx + mn) / 2)
+        # выбираем число из середины возможного диапазона
         if predict_number == number:
             break  # угадали - выходим из цикла
         elif predict_number < number:
@@ -54,7 +54,6 @@ def score_game(predict) -> int:
 
 
 if __name__ == '__main__':
-    # score_game(random_predict)
     print(
         f'Рандомный алгоритм угадывает число в среднем за {score_game(random_predict)} попыток')
     print(
