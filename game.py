@@ -18,7 +18,7 @@ def titenkov_predict(number=1):
     mn, mx = min_, max_  # задаем локальные переменные верхней и нижней границ
     count = 0
     while True:
-        count += 1        
+        count += 1
         predict_number = int((mx + mn) / 2)
         # выбираем число из середины возможного диапазона
         if predict_number == number:
